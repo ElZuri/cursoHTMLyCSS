@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="description" content="Clase donde aprendi como hacer una litas de opciones con select y datalist"/>
+        <link rel="stylesheet" href="../css/estilos.css"/>
+        <title>Clase: Select y datalist</title>
+    </head>
+    <body>
+        <main>
+            <form>
+                <h2>Etiqueta select:</h2>
+                <label for="cursos">
+                    <span>Selecciona un curso</span>
+                    <select name="cursos" id="">
+                        <option value="Javascript">Javascript</option>
+                        <option value="CSS3">CSS3</option>
+                        <option value="HTML">HTML</option>
+                    </select>
+                </label>
+                <h2>Etiqueta datalist:</h2>
+                <label for="pais">
+                    <span>Selecciona el pais del que vienes.</span>
+                    <input list="pais" required>
+                        <datalist id="pais">
+                            <option value="México">México</option>
+                            <option value="Canadá">Canadá</option>
+                            <option value="Estados Unidos">Estados Unidos</option>
+                            <option value="España">España</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Perú">Perú</option>
+                            <option value="Bolivia">Bolivia</option>
+                        </datalist>
+                </label>
+                <input type="submit">
+            </form>
+        </main>
+    </body>
+</html>
