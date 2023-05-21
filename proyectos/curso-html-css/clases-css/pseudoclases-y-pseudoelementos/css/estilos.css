@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    color:aliceblue;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-nav{
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0px;
+    border-radius: 10px;
+    background-color: #075255;
+    text-align: center;
+
+}
+.main-nav__item{
+    display:inline-block;
+}
+.main-nav__item a{
+    color:blanchedalmond;
+    padding: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color:darkblue;
+}
+.main-nav__item a:hover{
+    color: burlywood;
+}
+.main-nav__item a:active{
+    color: rgb(226, 145, 40);
+}
+.main-nav__item a::before{
+    content: "/";
+}
+.main-nav__item a::after{
+    content: "/";
+}
