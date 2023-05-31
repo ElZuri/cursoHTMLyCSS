@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cuando se declara un estilo, se el navegador los aplica en forma de cascada y ese orden es llamada especificidad.">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Clase: Especificidad en CSS3.</title>
+</head>
+<body>
+    <main>
+        <h1>Especificidad en CSS3.</h1>
+        <section>
+            <h2>Orden de declaración.</h2>
+            <p>
+                El orden en el que el navegador aplica los estilos es el siguiente:
+            </p>
+            <ol>
+                <li>Importancia.</li>
+                <li>Especificidad.</li>
+                <li>Orden de</li>
+            </ol>
+            <section>
+                <h3><li>Importancia.</li></h3>
+                <p>
+                    Lista de orden de importancia:
+                </p>
+                <ol>
+                    <li>Hoja de estilo de agente de usuario (Estilos de Navegador).</li>
+                    <li>Declaraciones normales en hojas de estilo de autor (Nuestro CSS).</li>
+                    <li>Declaraciones importantes en hojas de estilos de autor (!important).</li>
+                </ol>
+            </section>
+            <section>
+                <h3><li>Especificidad.</li></h3>
+                <p>
+                    La especificidad es un numero de importancia que le da el navegador a los selectores para escoger un estilo.
+                </p>
+                <p>
+                    En esta el valor es mas importante de izquierda a derecha.
+                </p>
+                <p>
+                    Tambien existe un valor llamado "!important" con el que le decimos al navegador que este estilo es el se debe escoger sobre todos los demas, aunque esto es una mala practica ya que hay muchos proyectos con este atributo repetido multples veces.
+                </p>
+                <figure>
+                    <img src="https://i.postimg.cc/fyDcNLkC/Especificidad.png" alt="Tabla de Especificidad."/>
+                    <figcaption>Tabla de especificidad.</figcaption>
+                </figure>
+            </section>
+            <section>
+                <h3><li>Reglas de Cascada</li></h3>
+                <p>
+                    Los estilos CSS3 son elegidos por el navegador como una cascada, de ahi su nombre, en el cual el navegador realiza un proseso de arriba hacia abajo y selecciona el ultimo escalon que cumplio con la condición.
+                </p>
+                <figure>
+                    <img src="https://i.postimg.cc/g0r8qrPJ/Reglas-de-Cascada-drawio.png" alt="Diagrama de selector de cascada"/>
+                    <figcaption>Diagrama de selector de cascada.</figcaption>
+            </section>
+            <section>
+                <h3>Orden de las fuentes.</h3>
+                <p>
+                    En tus propios estilos, las declaraciones al final del documento, anularan a las que sucedan antes en caso de conflicto.
+                </p>
+                <figure>
+                    <img src="https://i.postimg.cc/ZRnZVBbW/cascada.png" alt="Conflicto en color." />
+                    <figcaption>Conflicto en color en body y section.</figcaption>
+                </figure>
+                <p>
+                    Como se muestra en la imagen anterior, las etiquetas body y section establecen un color para el texto diferente. Pero como section esta al final del ducumento, anula el estilo de body.
+                </p>
+                <p>
+                    Esto solo funciona cuando tienen la misma especificidad, ya que ambos son etiquetas y tienen 0,0,1 de especidad.
+                </p>
+            </section>
+            <section>
+                <h3>Nota*: Especificidad en Visual Studio Code.</h3>
+                <p>
+                    En Visual Studio Code podemos ver la especificidad de los selectores con poner el ratón encima.
+                </p>
+                <figure>
+                    <img src="https://i.postimg.cc/g0cRYWqv/Captura-de-pantalla-2023-05-31-024814.png" alt="Especidad del selector." />
+                    <figcaption>Especidad del selector.</figcaption>
+                </figure>
+                <p>
+                    Como se puede apreciar tengo un estilo tipo id, el cual es de una especidad mayor a la de etiqueta, haciendo que el siguiente texto que pondre con la id "codigo" tendra el color verde, aunque la etiqueta body y bisque esten pordebajo de el, ya que esta propiedad de color tienen menor especificidad para el navegador.
+                </p>
+                <p id="codigo">
+                    Este es el texto generado con la id codigo en la etiqueta p.
+                </p>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
