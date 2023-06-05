@@ -59,16 +59,16 @@ figcaption {
     color: white;
 }
 
-#page-title {
-    font-family: Arial, Helvetica, sans-serif;
+.title {
+    margin-top: 15px;
+    font-family: monospace;
 }
-
 #codigo {
     color: green;
     font-family: Lucida Console, Console, Cons;
 }
 
-#main-nav {
+.nav {
     text-align: center;
     margin-top: 5px;
     padding: 20px;
@@ -76,11 +76,11 @@ figcaption {
     border-bottom: 5px solid bisque;
 }
 
-#main-nav li {
+.nav li {
     display: inline-block;
 }
 
-#main-nav a {
+.nav a {
     font-size: 20px;
     color: white;
     background-color: brown;
@@ -89,7 +89,6 @@ figcaption {
     text-decoration: none;
 }
 
-.title {
-    margin-top: 15px;
-    font-family: monospace;
+.nav .blog{
+    background-color: red;
 }
