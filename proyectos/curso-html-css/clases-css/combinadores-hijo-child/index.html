@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nos permiten combinar multiples seletores y crear una mayor cantidad de especificidad">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Clase: Los Combinadores: Hijo - Child.</title>
+</head>
+<body>
+    <main>
+        <h1>Clase: Los Combinadores: Hijo - Child.</h1>
+        <p>Soy un p en main</p>
+        <section>
+            <p>Soy un p en section</p>
+        </section>
+        <section>
+            <h2>Descripción</h2>
+            <p>Aplica los estilos a las etiquetas p que se estan en la etiqueta contenedora section.</p>
+            <p class="codigo">
+            section > p {
+            color: salmon;
+            }
+            </p>
+        </section>
+    </main>
+</body>
+</html>
