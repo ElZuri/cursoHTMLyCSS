@@ -5,9 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Desafio de position">
+    <link rel="stylesheet" href="./estilos.css">
     <title>Clase: Desafio de position.</title>
 </head>
 <body>
-    
+    <header id="cabecera">
+        <figure class="logo-txt__figure">
+            <img  class="logo-txt" src="https://i.postimg.cc/NjbSBKhv/Zuri-Producciones.png">
+        </figure>
+        <figure class="logo-img__figure">
+            <img class="logo-img" src="https://i.postimg.cc/ZY1VPTcz/ZuriLogo.png">
+        </figure>
+        <nav>
+            <ul class="main-nav">
+                <li class="main-nav__item"><a href="#">Home</a></li>
+                <li class="main-nav__item"><a href="#">Educación</a></li>
+                <li class="main-nav__item"><a href="#">Contacto</a></li>
+                <li class="main-nav__item"><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Clase: Position</h1>
+        <p>
+            La propiedad position de CSS especifíca cómo un elemento es posicionado en el documento. Las propiedades top, right, left y bottom determinan la ubicacion final de los objetos.
+        </p>
+        <h2>Tipos de posicionamiento</h2>
+        <p>
+            Un elemento posicionado es un elemento cuyo valor computado de position es relative, absolute, fixed o sticky. Osea cualquiera menos static.
+        </p>
+        <h3>Relative</h3>
+        <p>
+            Las propiedades de posicion ubican al elemento en relacion a su posición actual estatica.
+        </p>
+        <h3>Absolute-Fixed</h3>
+        <p>
+            Las propiedades de posición especifícan el desplazamiento desde los bordes del contenedor padre y los demas elementos estáticos de ignoran el elemento y su anterior posicion static.
+        </p>
+        <p>Fixed se alinia al contendor padre principal.</p>
+        <h3>Sticky</h3>
+        <p>
+            Es tratado como relative hasta que el contener padre deja la ventana y este se queda pegado a la ventana con una distancia establecida por las propiedades de posición.
+        </p>
+        <h1>Desafío</h1>
+        <p>A la derecha tenemos una carta de presentacion de ZuriProduccionesque fue puesta con el position.</p>
+        <section class="container-desafio">
+            
+            <div class="container-desafio__content">
+             <h2 class="titulo-desafio">ZuriProducciones</h2>
+             <img id="desafio" class="logo-img" src="https://i.postimg.cc/ZY1VPTcz/ZuriLogo.png">
+             <p>ZuriProducciones es una empresa iniciada por un solo hombre llamado Luis Roberto Ramírez Rocha, tambien conocido como Zuri, el cual busca crear una empresa mexicana de alto impacto en el mundo de los videojuegos.</p></div>
+        </section>
 </body>
 </html>
