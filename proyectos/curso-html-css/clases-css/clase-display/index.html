@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Con display podemos ordenar los elementos de forma horizontal o vertical.">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Clase: Display</title>
+</head>
+<body>
+        <header id="cabecera">
+            <figure class="logo-txt__figure">
+                <img class="logo-txt" src="https://i.postimg.cc/NjbSBKhv/Zuri-Producciones.png">
+            </figure>
+            <figure class="logo-img__figure">
+                <img class="logo-img" src="https://i.postimg.cc/ZY1VPTcz/ZuriLogo.png">
+            </figure>
+            <nav>
+                <ul class="main-nav">
+                    <li class="main-nav__item"><a href="#">Home</a></li>
+                    <li class="main-nav__item"><a href="#">Educación</a></li>
+                    <li class="main-nav__item"><a href="#">Contacto</a></li>
+                    <li class="main-nav__item"><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Display</h1>
+            <p>Es la forma en que podemos ordenar los elementos static con los atributos block, inline e inline-block.</p>
+            <h3>block;</h3>
+            <p>Alinia los elementos de fomra vertical.</p>
+            <section class="section-ejemplo">
+                <article class="box-block">Box-Block</article>
+                <article class="box-block">Box-Block</article>
+                <article class="box-block">Box-Block</article>
+            </section>
+            <h3>inline;</h3>
+            <p>Alinia de forma horizontal pero no permite poner margin ni padding de forma inferior ni superior, solo lateral.</p>
+            <p>También ignora el width y el height.</p>
+            <section class="section-ejemplo">
+                <article class="box-inline">Box-Block</article>
+                <article class="box-inline">Box-Block</article>
+                <article class="box-inline">Box-Block</article>
+            </section>
+            <h3>inline-block</h3>
+            <p>Alinia de forma horizontal permitiendo el margin y el padding en cualquier dirección.</p>
+            <section class="section-ejemplo">
+                <article class="box-inline-block">Box-Block</article>
+                <article class="box-inline-block">Box-Block</article>
+                <article class="box-inline-block">Box-Block</article>
+            </section>
+            <section class="section-practica">
+                <h2>Práctica</h2>
+                <div class="block-element">Esta es una etiqueta div.</div>
+                <p class="block-element">Esta es una etiqueta párrafo.</p>
+                <div class="block-element">
+                    <p class="parrafo">Soy texto</p>
+                    <p class="parrafo">Soy texto</p>
+                    <p class="parrafo">Soy texto</p>
+                </div>
+                <span>Soy una etiqueta span</span>
+                <span>Soy una etiqueta span</span>
+
+                <ul class="nav">
+                    <li>Home</li>
+                    <li>Cursos</li>
+                    <li>Instructores</li>
+                    <li>Blog</li>
+                </ul>
+            </section>
+        </main>
+</body>
+</html>
