@@ -1,0 +1,323 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Contenido de la cabecera*/
+
+.logo-img {
+    width: 120px;
+    height: 120px;
+}
+
+.logo-txt {
+    width: auto;
+    height: 120px;
+}
+
+#cabecera {
+    background-color: black;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+}
+
+#cabecera figure {
+    display: inline-block;
+}
+
+
+.main-nav {
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0px;
+    border-radius: 10px;
+    background-color: #075255;
+    text-align: center;
+}
+
+.main-nav__item {
+    display: inline-block;
+}
+
+.main-nav__item a {
+    color: blanchedalmond;
+    padding: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: rgb(43, 10, 10);
+}
+
+.main-nav__item a:hover {
+    color: burlywood;
+}
+
+.main-nav__item a:active {
+    color: rgb(226, 145, 40);
+}
+
+.main-nav__item a::before {
+    content: "/";
+}
+
+.main-nav__item a::after {
+    content: "/";
+}
+
+h1 {
+    margin-top: 20px;
+    color: chocolate;
+}
+
+h2 {
+    margin-top: 10px;
+    color: white;
+}
+
+h3 {
+    margin-top: 10px;
+    color: rgb(115, 100, 76);
+}
+
+/*Estilos del Main*/
+.main-container {
+    color: bisque;
+    border-left: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 80%;
+    height: fit-content;
+    margin: 1px 10%;
+    padding-left: 15px;
+}
+
+h1 {
+    margin-top: 20px;
+    color: chocolate;
+}
+
+h2 {
+    margin: 10px;
+    color: rgb(255, 201, 6);
+}
+
+h3 {
+    margin-top: 10px;
+    color: rgb(115, 100, 76);
+}
+
+/*Estilos flex*/
+section{
+    margin: 10px;
+}
+.section-container__flex {
+    display: flex;
+    color: bisque;
+    border: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 80%;
+    height: fit-content;
+}
+.flex-direction__row-reverse {
+    display: flex;
+    color: bisque;
+    border: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 80%;
+    height: fit-content;
+    flex-direction: row-reverse;
+}
+.flex-direction__column{
+    display: flex;
+    color: bisque;
+    border: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 80%;
+    height: fit-content;
+    flex-direction: column;
+}
+.flex-direction__column-reverse {
+    display: flex;
+    color: bisque;
+    border: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 80%;
+    height: fit-content;
+    flex-direction:column-reverse;
+}
+/*Flex wrap*/
+.flex-wrap{
+    display: flex;
+    color: bisque;
+    border: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 45rem;
+    height: fit-content;
+    flex-wrap:wrap;
+}
+.flex-wrap-reverse{
+    display: flex;
+    color: bisque;
+    border: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 45rem;
+    height: fit-content;
+    flex-wrap: wrap-reverse;
+}
+
+/*Justify Content*/
+
+.justify-content__center {
+    display: flex;
+    color: bisque;
+    border: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 80%;
+    height: 15rem;
+    justify-content: center;
+}
+
+.justify-content__end {
+    display: flex;
+    color: bisque;
+    border: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 80%;
+    height: 15rem;
+    justify-content: end;
+}
+
+.justify-content__flex-end {
+    display: flex;
+    color: bisque;
+    border: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 80%;
+    height: 15rem;
+    justify-content: flex-end;
+}
+
+.justify-content__flex-start {
+    display: flex;
+    color: bisque;
+    border: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 80%;
+    height: 15rem;
+    justify-content: flex-start;
+}
+
+.justify-content__left {
+    display: flex;
+    color: bisque;
+    border: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 80%;
+    height: 15rem;
+    justify-content: left;
+}
+
+.justify-content__right {
+    display: flex;
+    color: bisque;
+    border: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 80%;
+    height: 15rem;
+    justify-content: right;
+}
+
+.justify-content__space-around {
+    display: flex;
+    color: bisque;
+    border: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 80%;
+    height: 15rem;
+    justify-content: space-around;
+}
+
+.justify-content__space-between {
+    display: flex;
+    color: bisque;
+    border: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 80%;
+    height: 15rem;
+    justify-content: space-between;
+}
+
+.justify-content__space-evenly {
+    display: flex;
+    color: bisque;
+    border: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 80%;
+    height: 15rem;
+    justify-content: space-evenly;
+}
+
+.justify-content__start {
+    display: flex;
+    color: bisque;
+    border: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 80%;
+    height: 15rem;
+    justify-content: start;
+}
+
+.justify-content__stretch {
+    display: flex;
+    color: bisque;
+    border: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 80%;
+    height: 15rem;
+    justify-content: stretch;
+}
+
+
+/*Poner todos los tipos de justify content que faltan.*/
+/*Contenedores box de ejemplo*/
+.box{
+    width: 10rem;
+    height: 10rem;
+}
+
+.box1{
+    background-color: blueviolet;
+}
+
+.box2{
+    background-color: brown;
+}
+
+.box3{
+    background-color: cadetblue;
+}
+.box4{
+    background-color: darkblue;
+}
+.box5{
+    background-color: darkgoldenrod;
+}
+.box6{
+    background-color: darkred;
+}
+
+/*Footer*/
+footer {
+    display: block;
+    color:beige;
+    font-size: 2rem;
+}

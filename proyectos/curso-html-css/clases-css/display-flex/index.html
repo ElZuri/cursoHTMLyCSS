@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Con display podemos ordenar los elementos de forma horizontal o vertical.">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Clase: Display</title>
+</head>
+
+<body>
+    <header id="cabecera">
+        <figure class="logo-txt__figure">
+            <img class="logo-txt" src="https://i.postimg.cc/NjbSBKhv/Zuri-Producciones.png">
+        </figure>
+        <figure class="logo-img__figure">
+            <img class="logo-img" src="https://i.postimg.cc/ZY1VPTcz/ZuriLogo.png">
+        </figure>
+        <nav class="main-nav">
+            <ul>
+                <li class="main-nav__item"><a href="../../../../index.html">Home</a></li>
+                <li class="main-nav__item"><a href="#">Educación</a></li>
+                <li class="main-nav__item"><a href="#">Contacto</a></li>
+                <li class="main-nav__item"><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+        <h1>DISPLAY: FLEX;</h1>
+        <p>
+            Ademas de los otros display mencionados, tambien exite uno que es mas dinamico con e intuitivo con los elemntos, y este es flex.
+        </p>
+        <p>
+            Este acomoda de forma horizontal(row) en automatico y para poder cambiarlo tenemos que usar flex-direction.
+        </p>
+        <p>
+            Por defecto flex-direction esta en fila(row) y se puede cambiar a columna(column).
+        </p>
+        <h2>display: flex</h2>
+      
+    <section class="section-container__flex">
+       <div class="box1 box">
+        <p>box1</p>
+       </div>
+    <div class="box2 box">
+        <p>box2</p>
+    </div>
+    <div class="box3 box">
+        <p>box3</p>
+    </div>
+    <div class="box4 box">
+        <p>box4</p>
+    </div>
+    <div class="box5 box">
+        <p>box5</p>
+    </div>
+    <div class="box6 box">
+        <p>box6</p>
+    </div>
+    </section>
+    <h2>display: flex/flex-direction:row-reverse;</h2>
+    <p>
+    </p>
+    <section class="flex-direction__row-reverse">
+        <div class="box1 box">
+            <p>box1</p>
+        </div>
+        <div class="box2 box">
+            <p>box2</p>
+        </div>
+        <div class="box3 box">
+            <p>box3</p>
+        </div>
+        <div class="box4 box">
+            <p>box4</p>
+        </div>
+        <div class="box5 box">
+            <p>box5</p>
+        </div>
+        <div class="box6 box">
+            <p>box6</p>
+        </div>
+    </section>
+    <h2>display: flex/flex-direction: column;</h2>
+    <section class="flex-direction__column">
+        <div class="box1 box">
+            <p>box1</p>
+        </div>
+        <div class="box2 box">
+            <p>box2</p>
+        </div>
+        <div class="box3 box">
+            <p>box3</p>
+        </div>
+        <div class="box4 box">
+            <p>box4</p>
+        </div>
+        <div class="box5 box">
+            <p>box5</p>
+        </div>
+        <div class="box6 box">
+            <p>box6</p>
+        </div>
+    </section>
+    <h2>display: flex/flex-direction:column-reverse;</h2>
+    <section class="flex-direction__column-reverse">
+        <div class="box1 box">
+            <p>box1</p>
+        </div>
+        <div class="box2 box">
+            <p>box2</p>
+        </div>
+        <div class="box3 box">
+            <p>box3</p>
+        </div>
+        <div class="box4 box">
+            <p>box4</p>
+        </div>
+        <div class="box5 box">
+            <p>box5</p>
+        </div>
+        <div class="box6 box">
+            <p>box6</p>
+        </div>
+    </section>
+    <h2>flex-wrap: wrap</h2>
+    <p>
+        flex-wrap es una opcion que nos permite recorrer los elementos a la siguiente columna(column) o fila(row), y por defecto se encuntra en desactivado(unwrap).
+    </p>
+    <section class="flex-wrap">
+        <div class="box1 box">
+            <p>box1</p>
+        </div>
+        <div class="box2 box">
+            <p>box2</p>
+        </div>
+        <div class="box3 box">
+            <p>box3</p>
+        </div>
+        <div class="box4 box">
+            <p>box4</p>
+        </div>
+        <div class="box5 box">
+            <p>box5</p>
+        </div>
+        <div class="box6 box">
+            <p>box6</p>
+        </div>
+    </section>
+    <h2>flex-wrap: wrap-reverse</h2>
+    <section class="flex-wrap-reverse">
+        <div class="box1 box">
+            <p>box1</p>
+        </div>
+        <div class="box2 box">
+            <p>box2</p>
+        </div>
+        <div class="box3 box">
+            <p>box3</p>
+        </div>
+        <div class="box4 box">
+            <p>box4</p>
+        </div>
+        <div class="box5 box">
+            <p>box5</p>
+        </div>
+        <div class="box6 box">
+            <p>box6</p>
+        </div>
+    </section>
+    <h2>justify-content</h2>
+    <p>
+        Este es un atributo que nos permite acomodar el orden de los elementos contenidos.
+    </p>
+    <h2>justify-content:center;</h2>
+    <section class="justify-content__center">
+        <div class="box1 box">
+            <p>box1</p>
+        </div>
+        <div class="box2 box">
+            <p>box2</p>
+        </div>
+        <div class="box3 box">
+            <p>box3</p>
+        </div>
+        <div class="box4 box">
+            <p>box4</p>
+        </div>
+        <div class="box5 box">
+            <p>box5</p>
+        </div>
+        <div class="box6 box">
+            <p>box6</p>
+        </div>
+    </section>
+    <h2>justify-content:end;</h2>
+    <section class="justify-content__end">
+        <div class="box1 box">
+            <p>box1</p>
+        </div>
+        <div class="box2 box">
+            <p>box2</p>
+        </div>
+        <div class="box3 box">
+            <p>box3</p>
+        </div>
+        <div class="box4 box">
+            <p>box4</p>
+        </div>
+        <div class="box5 box">
+            <p>box5</p>
+        </div>
+        <div class="box6 box">
+            <p>box6</p>
+        </div>
+    </section>
+    <h2>justify-content:flex-end;</h2>
+    <section class="justify-content__flex-end">
+        <div class="box1 box">
+            <p>box1</p>
+        </div>
+        <div class="box2 box">
+            <p>box2</p>
+        </div>
+        <div class="box3 box">
+            <p>box3</p>
+        </div>
+        <div class="box4 box">
+            <p>box4</p>
+        </div>
+        <div class="box5 box">
+            <p>box5</p>
+        </div>
+        <div class="box6 box">
+            <p>box6</p>
+        </div>
+    </section>
+    <h2>justify-content:flex-start;</h2>
+    <section class="justify-content__flex-start">
+        <div class="box1 box">
+            <p>box1</p>
+        </div>
+        <div class="box2 box">
+            <p>box2</p>
+        </div>
+        <div class="box3 box">
+            <p>box3</p>
+        </div>
+        <div class="box4 box">
+            <p>box4</p>
+        </div>
+        <div class="box5 box">
+            <p>box5</p>
+        </div>
+        <div class="box6 box">
+            <p>box6</p>
+        </div>
+    </section>
+    <h2>justify-content:left;</h2>
+    <section class="justify-content__left">
+        <div class="box1 box">
+            <p>box1</p>
+        </div>
+        <div class="box2 box">
+            <p>box2</p>
+        </div>
+        <div class="box3 box">
+            <p>box3</p>
+        </div>
+        <div class="box4 box">
+            <p>box4</p>
+        </div>
+        <div class="box5 box">
+            <p>box5</p>
+        </div>
+        <div class="box6 box">
+            <p>box6</p>
+        </div>
+    </section>
+    <h2>justify-content:right;</h2>
+    <section class="justify-content__right">
+        <div class="box1 box">
+            <p>box1</p>
+        </div>
+        <div class="box2 box">
+            <p>box2</p>
+        </div>
+        <div class="box3 box">
+            <p>box3</p>
+        </div>
+        <div class="box4 box">
+            <p>box4</p>
+        </div>
+        <div class="box5 box">
+            <p>box5</p>
+        </div>
+        <div class="box6 box">
+            <p>box6</p>
+        </div>
+    </section>
+    <h2>justify-content: space-around;</h2>
+    <section class="justify-content__space-around">
+        <div class="box1 box">
+            <p>box1</p>
+        </div>
+        <div class="box2 box">
+            <p>box2</p>
+        </div>
+        <div class="box3 box">
+            <p>box3</p>
+        </div>
+        <div class="box4 box">
+            <p>box4</p>
+        </div>
+        <div class="box5 box">
+            <p>box5</p>
+        </div>
+        <div class="box6 box">
+            <p>box6</p>
+        </div>
+    </section>
+    <h2>justify-content:space-between;</h2>
+    <section class="justify-content__space-between">
+        <div class="box1 box">
+            <p>box1</p>
+        </div>
+        <div class="box2 box">
+            <p>box2</p>
+        </div>
+        <div class="box3 box">
+            <p>box3</p>
+        </div>
+        <div class="box4 box">
+            <p>box4</p>
+        </div>
+        <div class="box5 box">
+            <p>box5</p>
+        </div>
+        <div class="box6 box">
+            <p>box6</p>
+        </div>
+    </section>
+    <h2>justify-content:space-evenly;</h2>
+    <section class="justify-content__space-evenly">
+        <div class="box1 box">
+            <p>box1</p>
+        </div>
+        <div class="box2 box">
+            <p>box2</p>
+        </div>
+        <div class="box3 box">
+            <p>box3</p>
+        </div>
+        <div class="box4 box">
+            <p>box4</p>
+        </div>
+        <div class="box5 box">
+            <p>box5</p>
+        </div>
+        <div class="box6 box">
+            <p>box6</p>
+        </div>
+    </section>
+    <h2>justify-content:start;</h2>
+    <section class="justify-content__start">
+        <div class="box1 box">
+            <p>box1</p>
+        </div>
+        <div class="box2 box">
+            <p>box2</p>
+        </div>
+        <div class="box3 box">
+            <p>box3</p>
+        </div>
+        <div class="box4 box">
+            <p>box4</p>
+        </div>
+        <div class="box5 box">
+            <p>box5</p>
+        </div>
+        <div class="box6 box">
+            <p>box6</p>
+        </div>
+    </section>
+    <h2>justify-content:stretch;</h2>
+    <section class="justify-content__stretch">
+        <div class="box1 box">
+            <p>box1</p>
+        </div>
+        <div class="box2 box">
+            <p>box2</p>
+        </div>
+        <div class="box3 box">
+            <p>box3</p>
+        </div>
+        <div class="box4 box">
+            <p>box4</p>
+        </div>
+        <div class="box5 box">
+            <p>box5</p>
+        </div>
+        <div class="box6 box">
+            <p>box6</p>
+        </div>
+    </section>
+    </main>
+</body>
+</html>
