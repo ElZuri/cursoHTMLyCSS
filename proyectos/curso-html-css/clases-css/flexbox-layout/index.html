@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Con display podemos ordenar los elementos de forma horizontal o vertical.">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Clase: Flexbox Layout</title>
+</head>
+
+<body>
+    <header id="cabecera">
+        <figure class="logo-txt__figure">
+            <img class="logo-txt" src="https://i.postimg.cc/NjbSBKhv/Zuri-Producciones.png">
+        </figure>
+        <figure class="logo-img__figure">
+            <img class="logo-img" src="https://i.postimg.cc/ZY1VPTcz/ZuriLogo.png">
+        </figure>
+        <nav class="main-nav">
+            <ul>
+                <li class="main-nav__item"><a href="../../../../index.html">Home</a></li>
+                <li class="main-nav__item"><a href="#">Educación</a></li>
+                <li class="main-nav__item"><a href="#">Contacto</a></li>
+                <li class="main-nav__item"><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+        <h1>PRÁCTICA DE FLEXBOX LAYOUTS.</h1>
+        <p>
+            Este acomoda de forma horizontal(row) en automatico y para poder cambiarlo tenemos que usar flex-direction.
+        </p>
+        <p>
+            Por defecto flex-direction esta en fila(row) y se puede cambiar a columna(column).
+        </p>
+        <h2>display: flex;</h2>
+    <section class="section-container__flex">
+       <div class="box1 box">
+        <p>box1</p>
+       </div>
+    <div class="box2 box">
+        <p>box2</p>
+    </div>
+    <div class="box3 box">
+        <p>box3</p>
+    </div>
+    <div class="box4 box">
+        <p>box4</p>
+    </div>
+    <div class="box5 box">
+        <p>box5</p>
+    </div>
+    <div class="box6 box">
+        <p>box6</p>
+    </div>
+    </section>
+    <h2>display: flex/align-items: center;</h2>
+    <p>
+    </p>
+    <section class="align-items__center">
+        <div class="box1 box">
+            <p>box1</p>
+        </div>
+        <div class="box2 box">
+            <p>box2</p>
+        </div>
+        <div class="box3 box">
+            <p>box3</p>
+        </div>
+        <div class="box4 box">
+            <p>box4</p>
+        </div>
+        <div class="box5 box">
+            <p>box5</p>
+        </div>
+        <div class="box6 box">
+            <p>box6</p>
+        </div>
+    </section>
+    <h2>display: flex/align-items:flex-end;</h2>
+    <section class="align-items__flex-end">
+        <div class="box1 box">
+            <p>box1</p>
+        </div>
+        <div class="box2 box">
+            <p>box2</p>
+        </div>
+        <div class="box3 box">
+            <p>box3</p>
+        </div>
+        <div class="box4 box">
+            <p>box4</p>
+        </div>
+        <div class="box5 box">
+            <p>box5</p>
+        </div>
+        <div class="box6 box">
+            <p>box6</p>
+        </div>
+    </section>
+    <h2>display: flex/align-item:flex-start;</h2>
+    <section class="align-items__flex-start">
+        <div class="box1 box">
+            <p>box1</p>
+        </div>
+        <div class="box2 box">
+            <p>box2</p>
+        </div>
+        <div class="box3 box">
+            <p>box3</p>
+        </div>
+        <div class="box4 box">
+            <p>box4</p>
+        </div>
+        <div class="box5 box">
+            <p>box5</p>
+        </div>
+        <div class="box6 box">
+            <p>box6</p>
+        </div>
+    </section>
+    <h2>align-items:stretch;</h2>
+    <p>
+        Para que funcione no debe haber un height en los elementos hijos.
+    </p>
+    <section class="align-items__stretch">
+        <div class="box1 box-stretch">
+            <p>box1</p>
+        </div>
+        <div class="box2 box-stretch">
+            <p>box2</p>
+        </div>
+        <div class="box3 box-stretch">
+            <p>box3</p>
+        </div>
+        <div class="box4 box-stretch">
+            <p>box4</p>
+        </div>
+        <div class="box5 box-stretch">
+            <p>box5</p>
+        </div>
+        <div class="box6 box-stretch">
+            <p>box6</p>
+        </div>
+    </section>
+    <h2>align-items:baseline;</h2>
+    <p>
+        Para que funcione no debe haber un height en los elementos hijos.
+    </p>
+    <section class="align-items__baseline">
+        <div class="box1 box-stretch">
+            <p>box1</p>
+        </div>
+        <div class="box2 box-stretch">
+            <p>box2</p>
+        </div>
+        <div class="box3 box-stretch">
+            <p>box3</p>
+        </div>
+        <div class="box4 box-stretch">
+            <p>box4</p>
+        </div>
+        <div class="box5 box-stretch">
+            <p>box5</p>
+        </div>
+        <div class="box6 box-stretch">
+            <p>box6</p>
+        </div>
+    </section>
+        <h2>order:num;</h2>
+        <p>
+            Tambien podemos usar un atributo llamado order, con el cual podemos cambiar el orden de los obejetos, si estos no
+            tienen este atributo el navegador los ordena en el orden del html y luego pondra los que si tienen un atributo
+            order.
+        </p>
+        <p>
+            Lasas cajas de acontinuación se les cambio el orden, siendo box5: 1, box1: 2 y box2: 3. mientras que box3, box4
+            y box 6 no tienen el atributo order.
+        </p>
+    <section class="section-container__flex justify-content__center">
+        <div class="box1-order box">
+            <p>box1</p>
+        </div>
+        <div class="box2-order box">
+            <p>box2</p>
+        </div>
+        <div class="box3-order box">
+            <p>box3</p>
+        </div>
+        <div class="box4-order box">
+            <p>box4</p>
+        </div>
+        <div class="box5-order box">
+            <p>box5</p>
+        </div>
+        <div class="box6-order box">
+            <p>box6</p>
+        </div>
+    </section>
+    <h2>flex-grow: 1;</h2>
+    <section class="section-container__flex">
+        <div class="box1-grow box">
+            <p>box1-grow</p>
+        </div>
+        <div class="box2-grow box">
+            <p>box2-grow</p>
+        </div>
+        <div class="box3-grow box">
+            <p>box3-grow</p>
+        </div>
+        <div class="box4 box">
+            <p>box4</p>
+        </div>
+        <div class="box5-grow box">
+            <p>box5-grow</p>
+        </div>
+        <div class="box6-grow box">
+            <p>box6-grow</p>
+        </div>
+    </section>
+    <h2>Practica:</h2>
+    <section class="section-container__flex-practica">
+        <div class="box1 box-practica">
+            <p>box1</p>
+        </div>
+        <div class="box2 box-practica">
+            <p>box2</p>
+        </div>
+        <div class="box3 box-practica">
+            <p>box3</p>
+        </div>
+        <div class="box4 box-practica">
+            <p>box4</p>
+        </div>
+        <div class="box5 box-practica">
+            <p>box5</p>
+        </div>
+        <div class="box6 box-practica">
+            <p>box6</p>
+        </div>
+    </section>
+    <h2>justify-content:flex-start;</h2>
+    <section class="section-container__flex justify-content__flex-start">
+        <div class="box1 box">
+            <p>box1</p>
+        </div>
+        <div class="box2 box">
+            <p>box2</p>
+        </div>
+        <div class="box3 box">
+            <p>box3</p>
+        </div>
+        <div class="box4 box">
+            <p>box4</p>
+        </div>
+        <div class="box5 box">
+            <p>box5</p>
+        </div>
+        <div class="box6 box">
+            <p>box6</p>
+        </div>
+    </section>
+    </main>
+</body>
+</html>

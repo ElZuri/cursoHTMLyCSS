@@ -1,0 +1,330 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Contenido de la cabecera*/
+
+.logo-img {
+    width: 120px;
+    height: 120px;
+}
+
+.logo-txt {
+    width: auto;
+    height: 120px;
+}
+
+#cabecera {
+    background-color: black;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+}
+
+#cabecera figure {
+    display: inline-block;
+}
+
+
+.main-nav {
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0px;
+    border-radius: 10px;
+    background-color: #075255;
+    text-align: center;
+}
+
+.main-nav__item {
+    display: inline-block;
+}
+
+.main-nav__item a {
+    color: blanchedalmond;
+    padding: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: rgb(43, 10, 10);
+}
+
+.main-nav__item a:hover {
+    color: burlywood;
+}
+
+.main-nav__item a:active {
+    color: rgb(226, 145, 40);
+}
+
+.main-nav__item a::before {
+    content: "/";
+}
+
+.main-nav__item a::after {
+    content: "/";
+}
+
+h1 {
+    margin-top: 20px;
+    color: chocolate;
+}
+
+h2 {
+    margin-top: 10px;
+    color: white;
+}
+
+h3 {
+    margin-top: 10px;
+    color: rgb(115, 100, 76);
+}
+
+/*Estilos del Main*/
+.main-container {
+    color: bisque;
+    border-left: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 80%;
+    height: fit-content;
+    margin: 1px 10%;
+    padding-left: 15px;
+}
+
+h1 {
+    margin-top: 20px;
+    color: chocolate;
+}
+
+h2 {
+    margin: 10px;
+    color: rgb(255, 201, 6);
+}
+
+h3 {
+    margin-top: 10px;
+    color: rgb(115, 100, 76);
+}
+
+/*Estilos flex*/
+section{
+    margin: 10px;
+}
+.section-container__flex {
+    display: flex;
+    color: bisque;
+    border: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 80%;
+    height: 50vh;
+}
+.align-items__center {
+    display: flex;
+    align-items: center;
+    color: bisque;
+    border: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 80%;
+    height: 50vh;
+}
+
+.align-items__flex-end{
+    display: flex;
+    align-items: flex-end;
+    color: bisque;
+    border: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 80%;
+    height: 50vh;
+}
+
+.align-items__flex-start {
+    display: flex;
+    align-items: flex-start;
+    color: bisque;
+    border: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 80%;
+    height: 50vh;
+}
+
+.align-items__stretch {
+    display: flex;
+    align-items: stretch;
+    color: bisque;
+    border: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 80%;
+    height: 50vh;
+}
+
+.align-items__baseline {
+    display: flex;
+    align-items: baseline;
+    color: bisque;
+    border: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 80%;
+    height: 50vh;
+}
+/*Poner todos los tipos de justify content que faltan.*/
+/*Contenedores box de ejemplo*/
+.box{
+    width: 10rem;
+    height: 10rem;
+}
+.box-stretch {
+    width: 10rem;
+}
+.box1{
+    background-color: blueviolet;
+}
+
+.box2{
+    background-color: brown;
+}
+
+.box3{
+    background-color: cadetblue;
+}
+.box4{
+    background-color: darkblue;
+}
+.box5{
+    background-color: darkgoldenrod;
+}
+.box6{
+    background-color: darkred;
+}
+/*Order boxes*/
+.box1-order {
+    background-color: blueviolet;
+    order: 2;
+}
+
+.box2-order {
+    background-color: brown;
+    order: 3;
+}
+
+.box3-order {
+    background-color: cadetblue;
+}
+
+.box4-order {
+    background-color: darkblue;
+}
+
+.box5-order {
+    background-color: darkgoldenrod;
+    order: 1;
+}
+
+.box6-order {
+    background-color: darkred;
+}
+.box1{
+    background-color: blueviolet;
+}
+
+.box2{
+    background-color: brown;
+}
+
+.box3{
+    background-color: cadetblue;
+}
+.box4{
+    background-color: darkblue;
+}
+.box5{
+    background-color: darkgoldenrod;
+}
+.box6{
+    background-color: darkred;
+}
+/*flex-grow*/
+.box1-grow {
+    background-color: blueviolet;
+    flex-grow: 1;
+}
+
+.box2-grow {
+    background-color: brown;
+    flex-grow: 1;
+}
+
+.box3-grow {
+    background-color: cadetblue;
+    flex-grow: 1;
+}
+
+.box4-grow {
+    background-color: darkblue;
+    flex-grow: 1;
+}
+
+.box5-grow {
+    background-color: darkgoldenrod;
+    flex-grow: 1;
+}
+
+.box6-grow {
+    background-color: darkred;
+    flex-grow: 1;
+}
+/*practica*/
+.section-container__flex-practica {
+    display: flex;
+    color: bisque;
+    border: 0.3px solid #ccc;
+    margin-left: 15px;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.box-practica {
+    height: 10rem;
+    flex-basis: 10rem;
+    flex-grow: 1;
+}
+
+
+.box1 {
+    background-color: blueviolet;
+}
+
+.box2 {
+    background-color: brown;
+}
+
+.box3 {
+    background-color: cadetblue;
+}
+
+.box4 {
+    background-color: darkblue;
+}
+
+.box5 {
+    background-color: darkgoldenrod;
+}
+
+.box6 {
+    background-color: darkred;
+}
+/*Footer*/
+footer {
+    display: block;
+    color:beige;
+    font-size: 2rem;
+}
