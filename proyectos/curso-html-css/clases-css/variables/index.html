@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La variables nos permiten guardar estilos que podemos repetir.">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Clase: Variables</title>
+</head>
+
+<body>
+    <header id="cabecera">
+        <figure class="logo-txt__figure">
+            <img class="logo-txt" src="https://i.postimg.cc/NjbSBKhv/Zuri-Producciones.png">
+        </figure>
+        <figure class="logo-img__figure">
+            <img class="logo-img" src="https://i.postimg.cc/ZY1VPTcz/ZuriLogo.png">
+        </figure>
+        <nav class="main-nav">
+            <ul>
+                <li class="main-nav__item"><a href="../../../../index.html">Home</a></li>
+                <li class="main-nav__item"><a href="#">Educación</a></li>
+                <li class="main-nav__item"><a href="#">Contacto</a></li>
+                <li class="main-nav__item"><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+        <h1>Clase: Variables</h1>
+        <p>
+            Podemos crear variables con los valores de atributos que queramos utilizar mas de una vez para tener mayor control de estos mismos.
+        </p>
+        <p>
+            Las variables se puenden crear en cada selector que querramos usarlas.
+        </p>
+        <h2>Ejemplo</h2>
+        <p>
+            Si creamos una varible con el color bisque en body como se muestra acontinuacion pero un color rojo por defecto.
+        </p>
+        <section class="section-codigo">
+            <p>body {</p>
+            <p>--primary-color: bisque;</p>
+            <p>color:red;</p>
+            <p>}</p>
+        </section>
+        <p>
+            Y creamos una un selector main con el color de la variable.
+        </p>
+        <section class="section-codigo">
+            <p>main {</p>
+            <p>color: var(--primary-color);</p>
+            <p>}</p>
+        </section>
+        <p>
+            El resultado seria que toda la platilla body tendria color rojo y los contenedores main un color bisque como este documento.
+        </p>
+        <h2>Variables en esta plantilla.</h2>
+        <p>Para efectos mas visuales, cree variables para cada color y tamaño de fuente que pense que debia tener separarada para poder modificarla a mi gusto.</p>
+        <p>Y como quiero que estas variables sean utilizadas den todo la platilla CSS, las declare en el selector :root{}.</p>
+        <section class="section-codigo">
+            <p>:root{</p>
+            <p>/*cabecera*/</p>
+            <p>--header-size: 3rem;</p>
+            <p>--navbar-background-color: #075255;</p>
+            <p>--links-color: blanchedalmond;</p>
+            <p>--links-hover-color: burlywood;</p>
+            <p>--links-active-color: rgb(226, 145, 40);</p>
+            <p>--link-background-color: rgb(43, 10, 10);</p>
+            <p>/*main*/</p>
+            <p>--primary-color: bisque;</p>
+            <p>--secundary-color: burlywood;</p>
+            <p>--title-color: chocolate;</p>
+            <p>--subtitle-primary-color: rgb(255, 201, 6);</p>
+            <p>--subtitle-secundary-color: rgb(115, 100, 76);</p>
+            <p>--main-border-set: 0.3px solid #ccc;</p>
+            <p>--font: 2rem;</p>
+            <p>--back-color: black;</p>
+            <p>--p-margin-top: 1rem;</p>
+            <p>/*Codigo*/</p>
+            <p>--code-font-family: Lucida Console,
+            "Courier New",
+            monospace;</p>
+            <p>--code-color: rgb(5, 255, 5);</p>
+            <p>--code-background-color: rgb(9, 9, 52);</p>
+            <p>/*Footer*/</p>
+            <p>--footer-background-color: rgb(22, 2, 41);</p>
+            <p>}</p>
+        </section>
+    </main>
+</body>
+</html>
