@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La variables nos permiten guardar estilos que podemos repetir.">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Clase: Variables</title>
+</head>
+<body>
+    <header id="cabecera">
+        <figure class="logo-txt__figure">
+            <img class="logo-txt" src="https://i.postimg.cc/NjbSBKhv/Zuri-Producciones.png">
+        </figure>
+        <figure class="logo-img__figure">
+            <img class="logo-img" src="https://i.postimg.cc/ZY1VPTcz/ZuriLogo.png">
+        </figure>
+        <nav class="main-nav">
+            <ul>
+                <li class="main-nav__item"><a href="../../../../index.html">Home</a></li>
+                <li class="main-nav__item"><a href="#">Educación</a></li>
+                <li class="main-nav__item"><a href="#">Contacto</a></li>
+                <li class="main-nav__item"><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+        <h1>Clase: Web Fonts.</h1>
+        <p>Podemos insertar fuentes externas a nuestros estilos CSS, pero lo recomendable es usar un solo tipo de estilo para todo un proyecto ya que esto le da una identidad mas clara de este mismo, pues usar varias fuentes genera es una mala practica y un mal diseño.</p>
+        <p>En esta pagina usamos una fuente llamada Horror-Sketch en la barra nav, la cual fue puesta en una carpeta independiete llamda fonts y enlazada a la pagina en nuestro documento CSS con el siguiente comando.</p>
+        <section class="section-codigo">
+            <p>@font-face {</p>
+                <p>font-family: Horror-Sketch;</p>
+                <p>src: url(../fonts/Horror-Sketch.ttf);</p>
+            <p>}</p>
+        </section>
+    </main>
+</body>
+</html>
