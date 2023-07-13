@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Media queries es la forma en que optimizamos estilos para varios dispositivos.">
+    <link rel="stylesheet" href="./css/mobile-styles.css">
+    <link rel="stylesheet" href="./css/tablet-styles.css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" href="./css/pc-styles.css" media="screen and (min-width:1024px)">
+    <title>Clase: Media queries</title>
+</head>
+<body>
+    <header id="cabecera">
+        <figure class="logo-txt__figure">
+            <img class="logo-txt" src="https://i.postimg.cc/NjbSBKhv/Zuri-Producciones.png">
+        </figure>
+        <figure class="logo-img__figure">
+            <img class="logo-img" src="https://i.postimg.cc/ZY1VPTcz/ZuriLogo.png">
+        </figure>
+        <nav class="main-nav">
+            <ul>
+                <li class="main-nav__item"><a href="#">Home</a></li>
+                <li class="main-nav__item"><a href="#">Educación</a></li>
+                <li class="main-nav__item"><a href="#">Contacto</a></li>
+                <li class="main-nav__item"><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+        <h1>Clase: Media Queries.</h1>
+        <p>Es la forma en que podemos optimizar los estilos para varios tipos de pantalla como mobile, tablet y pc.</p>
+        <h2>Mobile Firts</h2>
+        <p>Sirve para hacer diseños principalmente para mobile, luego los crecemos a tablet y luego a pc.</p>
+        <p>Tambien existe Only mobile, donde solo se diseña para mobile.</p>
+        <h2>media queries en CSS</h2>
+        <p>Para establecer estilos por el tamaño de pantalla, usamos el siguiente codigo.</p>
+        <section class="section-codigo">
+            <p>@media (min-width:480px) {</p>
+            <p>...</p>
+            <p>}</p>
+            <p>@media (min-width:768px) {</p>
+            <p>...</p>
+            <p>}</p>
+            <p>@media (min-width:1024px) {</p>
+            <p>...</p>
+            <p>}</p>
+        </section>
+        <p>En la primer sección del código, tenemos el estilo para celulares, el segundo para tablets y el tercero para pc.</p>
+        <p>Siguiendo la regla de cascade, primero el navegador cargara los estilos para celular, despues cargara los estilos para tablet y por ultimo los estilos para pc.</p>
+        <p>Pero esto generaria un css muy grande el cual el navegador descargaria cada vez que se habra la página.</p>
+        <p>para mejorar eso usaremos:</p>
+        <h2>media queries en HEAD</h2>
+        <p>Con este método, creamos tres archivos css, uno llamada mobile-style.css, tablet-style.css y pc-style.css. y despues de eso, los vinvularemos a nuestro HTML en el head de la siguiente forma.</p>
+        <section class="section-codigo">
+            <p>&lt;link href="mobile-style.css" rel="stylesheet"&gt;</p>
+            <p>&lt;link href="tablet-style.css" rel="stylesheet" media="screen and (min-width:768px)"&gt;</p>
+            <p>&lt;link href="pc-style.css" rel="stylesheet" media="screen and (min-width:1024px)"&gt;</p>
+        </section>
+        <p>Así el navegador solo cargará el que ocupe dependiendo del tamaño de la pantalla.</p>
+        <p>Esta es una buena práctica.</p>
+        <h3>Este documente tiene media queries</h3>
+    </main>
+</body>
+</html>
