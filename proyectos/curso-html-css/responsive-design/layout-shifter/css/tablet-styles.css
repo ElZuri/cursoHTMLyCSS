@@ -1,0 +1,32 @@
+:root{
+    --html-font-size: 90.5%;
+}
+
+.logo-section {
+    justify-content:space-around;
+}
+
+.logo-img {
+    width: 120px;
+    height: auto;
+}
+
+.logo-txt {
+    width: auto;
+    height: 120px;
+}
+
+.main-nav {
+    font-size: var(--header-font-size);
+}
+
+/*Actividad Cajas*/
+.c1 {
+    width: 25%;
+}
+.c4 {
+    width: 75%;
+}
+.c5 {
+    width: 100%;
+}

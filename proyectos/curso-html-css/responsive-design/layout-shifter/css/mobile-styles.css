@@ -1,0 +1,197 @@
+/*Variables*/
+:root{
+    /*cabecera*/
+    --html-font-size: 62.5%;
+    --header-font-size: 1.8rem;
+    --navbar-background-color: #075255;
+    --links-color: blanchedalmond;
+    --links-hover-color: burlywood;
+    --links-active-color: rgb(226, 145, 40);
+    --link-background-color: rgb(43, 10, 10);
+    /*main*/
+    --body-font-size: 1.6rem;
+    --primary-color: bisque;
+    --secundary-color: burlywood;
+    --title-color: chocolate;
+    --subtitle-primary-color: rgb(255, 201, 6);
+    --subtitle-secundary-color: rgb(115, 100, 76);
+    --main-border-set: 0.3px solid #ccc;
+    --font: 2rem;
+    --back-color: black;
+    --p-margin-top: 1rem;
+    /*Codigo*/
+    --code-font-family: Lucida Console,
+        "Courier New",
+        monospace;
+    --code-color: rgb(5, 255, 5);
+    --code-background-color: rgb(9, 9, 52);
+    /*Footer*/
+    --footer-background-color: rgb(22, 2, 41);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: var(--html-font-size);
+}
+
+
+body {
+    font-size: --body-font-size;
+    background-color: var(--back-color);
+    font-family: serif;
+}
+
+/*Contenido de la cabecera*/
+.logo-section {
+    display: flex;
+    justify-content: center;
+}
+.logo-img {
+    width: 60px;
+    height: 60px;
+}
+
+.logo-txt {
+    width: auto;
+    height: 60px;
+}
+
+#cabecera {
+    background-color: var(--back-color);
+    text-align: center;
+
+}
+
+#cabecera figure {
+    display: inline-block;
+}
+
+
+.main-nav {
+    font-size: var(--header-font-size);
+    font-family: Horror-Sketch;
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0px;
+    border-radius: 10px;
+    background-color: var(--navbar-background-color);
+    text-align: center;
+}
+
+.main-nav__item {
+    display: inline-block;
+}
+
+a {
+    color: var(--links-color)
+}
+
+
+.main-nav__item a {
+    font-size: var(--header-font-size);
+    padding: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: var(--link-background-color);
+}
+
+a:hover {
+    color: var(--links-hover-color);
+}
+
+a:active {
+    color: var(--links-active-color);
+}
+
+a::before {
+    content: "/";
+}
+
+a::after {
+    content: "/";
+}
+
+/*Estilos del Main*/
+.main-container {
+    color: var(--primary-color);
+    border-left: var(--main-border-set);
+    margin-left: 15px;
+    width: 80%;
+    height: fit-content;
+    margin: 1px 10%;
+    padding-left: 15px;
+}
+
+.main-container p{
+    font-size: var(--font);
+    margin-top: var(--p-margin-top);
+}
+
+h1 {
+    margin-top: 20px;
+    color: var(--title-color);
+    font-size: 3rem;
+}
+
+h2 {
+    margin: 10px;
+    color: var(--subtitle-primary-color);
+    font-size: 2.7rem;
+}
+
+h3 {
+    margin-top: 10px;
+    color: var(--subtitle-secundary-color);
+    font-size: 2.4rem;
+}
+
+.section-codigo{
+    font-size: 0.8rem;
+    padding: 1rem;
+    margin-top: var(--p-margin-top);
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    font-family: var(--code-font-family);
+}
+
+/*Actividad Cajas*/
+
+.section-main__content{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.c1, .c2, .c3, .c4, .c5 {
+    width:100%;
+    min-width: 150px;
+    height: 150px;
+}
+
+.c4 {
+    height: auto;
+}
+
+.c1 {
+    background-color: rgb(50, 0, 0);
+}
+
+.c2 {
+    background-color: rgb(80, 0, 0);
+}
+
+.c3 {
+    background-color: rgb(110, 0, 0);
+}
+
+.c4 {
+    background-color: rgb(140, 0, 0);
+}
+
+.c5 {
+    background-color: rgb(170, 0, 0);
+}
