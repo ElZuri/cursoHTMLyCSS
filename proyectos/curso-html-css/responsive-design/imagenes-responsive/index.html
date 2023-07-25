@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive design es una forma de mejorar los estilos de la pagina web para todos los dispositivos.">
+    <link rel="stylesheet" href="./css/mobile-styles.css">
+    <link rel="stylesheet" href="./css/tablet-styles.css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" href="./css/pc-styles.css" media="screen and (min-width:1024px)">
+    <title>Clase: Imagenes Responsive.</title>
+</head>
+<body>
+    <header id="cabecera">
+        <section class="logo-section">
+            <picture>
+                <source class="logo-img" media="(min-width:1024px)" srcset="https://i.postimg.cc/NjbSBKhv/Zuri-Producciones.png">
+                <source class="logo-txt" media="(min-width:768px)" srcset="https://i.postimg.cc/PqRrX37t/m-Zuri-Producciones.png">
+                <img class="logo-txt" src="https://i.postimg.cc/fT84Q3ps/t-Zuri-Producciones.png">
+            </picture>
+            <picture>
+                <source class="logo-img" media="(min-width:1024px)" srcset="https://i.postimg.cc/ZY1VPTcz/ZuriLogo.png">
+                <source class="logo-img" media="(min-width:768px)" srcset="https://i.postimg.cc/Tw52pj8n/m-Zuri-Logo.png">
+                <img class="logo-img" src="https://i.postimg.cc/P5JgXXnw/t-Zuri-Logo.png" alt="Zuri Logo" />
+            </picture>
+        </section>
+        <nav class="main-nav">
+            <ul>
+                <li class="main-nav__item"><a href="https://elzuri.github.io/">Home</a></li>
+                <li class="main-nav__item"><a href="#">Educación</a></li>
+                <li class="main-nav__item"><a href="#">Contacto</a></li>
+                <li class="main-nav__item"><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+        <h1>Clase: Imagenes Responsive.</h1>
+        <p>Las imágenes adaptables son una parte importante del diseño web responsivo. El objetivo es hacer que las imágenes funcionen bien en dispositivos con una amplia diferencia de tamaño de pantallas, resoluciones y otras características. Esto ayuda a mejorar el rendimiento en diferentes dispositivos. HTML proporciona herramientas para ayudar a implementar imágenes adaptables, como srcset y el elemento.</p>
+        <p>Para hacer que una imagen sea responsiva, tienes que dar un nuevo valor a su propiedad de anchura. La altura de la imagen se ajustará automáticamente. Lo importante es saber que siempre debes utilizar unidades relativas para la propiedad de anchura, como el porcentaje, en lugar de las absolutas, como los píxeles.</p>
+        <h2>Actividad</h2>
+        <h3>Las images de abajo y el logo de la cabecera tienen imagenes responsive.</h3>
+        <section class="section-main__content">
+        <picture>
+            <source class="logo-section__picture" media="(min-width:1024px)" srcset="https://i.postimg.cc/8CgmVkST/Zuri-Producciones.png">
+            <source media="(min-width:768px)" srcset="https://i.postimg.cc/Tw52pj8n/m-Zuri-Logo.png">
+            <img src="https://i.postimg.cc/P5JgXXnw/t-Zuri-Logo.png" alt="Zuri Logo"/>
+        </picture>
+        </section>
+    </main>
+</body>
+</html>
