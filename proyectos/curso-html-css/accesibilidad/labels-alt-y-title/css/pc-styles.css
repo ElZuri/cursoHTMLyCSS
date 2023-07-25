@@ -1,0 +1,52 @@
+:root{
+    --html-font-size: 100%;
+}
+
+.logo-section {
+    justify-content: space-around;
+}
+
+.logo-img {
+    width: 120px;
+    height: auto;
+}
+
+.logo-txt {
+    width: auto;
+    height: 120px;
+    }
+
+.main-nav{
+    font-size: var(--header-font-size);
+}
+
+.main-container{
+margin-left: auto;
+margin-right: auto;
+}
+
+/*Actividad Cajas*/
+.section-main__content {
+    margin: 10px auto;
+}
+
+.c1 {
+    width: 25vw;
+    order: 1;
+}
+.c2 {
+    width: calc(30vw - 16px);
+    order: 2;
+}
+.c3 {
+    width: 25vw;
+    order: 3;
+}
+.c4 {
+    width: calc(40vw - 8px);
+    order: 4;
+}
+.c5 {
+    width: calc(40vw - 8px);
+    order: 5;
+}
