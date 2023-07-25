@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saber diseñar paginas web orientadas a personas con discapacidad es aumentar la accesiblidad a nuestro sitio web, haciendolo mas inclusivo.">
+    <link rel="stylesheet" href="./css/mobile-styles.css">
+    <link rel="stylesheet" href="./css/tablet-styles.css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" href="./css/pc-styles.css" media="screen and (min-width:1024px)">
+    <title>Clase: Imagenes Responsive.</title>
+</head>
+<body>
+    <header id="cabecera">
+        <section class="logo-section">
+            <picture>
+                <source class="logo-img" media="(min-width:1024px)" srcset="https://i.postimg.cc/NjbSBKhv/Zuri-Producciones.png">
+                <source class="logo-txt" media="(min-width:768px)" srcset="https://i.postimg.cc/PqRrX37t/m-Zuri-Producciones.png">
+                <img class="logo-txt" src="https://i.postimg.cc/fT84Q3ps/t-Zuri-Producciones.png">
+            </picture>
+            <picture>
+                <source class="logo-img" media="(min-width:1024px)" srcset="https://i.postimg.cc/ZY1VPTcz/ZuriLogo.png">
+                <source class="logo-img" media="(min-width:768px)" srcset="https://i.postimg.cc/Tw52pj8n/m-Zuri-Logo.png">
+                <img class="logo-img" src="https://i.postimg.cc/P5JgXXnw/t-Zuri-Logo.png" alt="Zuri Logo" />
+            </picture>
+        </section>
+        <nav class="main-nav">
+            <ul>
+                <li class="main-nav__item"><a href="https://elzuri.github.io/">Home</a></li>
+                <li class="main-nav__item"><a href="#">Educación</a></li>
+                <li class="main-nav__item"><a href="#">Contacto</a></li>
+                <li class="main-nav__item"><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+        <h1>La semántica en HTML</h1>
+            <p>La semántica en HTML se refiere al uso de etiquetas HTML para reforzar el significado de la información en las páginas web, en lugar de simplemente definir su presentación. Las etiquetas semánticas describen claramente su contenido tanto para el navegador como para el desarrollador. Por ejemplo, en lugar de utilizar etiquetas `&lt;div&gt;` con atributos `id` o `class` para indicar la navegación, el encabezado y el pie de página, se pueden utilizar elementos semánticos como `&lt;nav&gt;`, `&lt;header&gt;` y `&lt;footer&gt;`.</p>
+            <p>El uso de elementos semánticos ayuda a mejorar la accesibilidad y la optimización de motores de búsqueda, ya que proporciona una estructura clara y significativa para el contenido de la página. También puede hacer que el código sea más fácil de leer y mantener para los desarrolladores.</p>
+            <p>Aquí hay una <a target="_blank" href="https://allthetags.com/">lista de las etiquetas semanticas HTML5.</a></p>
+    </main>
+</body>
+</html>
